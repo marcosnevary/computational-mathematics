@@ -18,7 +18,7 @@ def animate_gradient_descent(self):
     else:
         intercept_range = np.linspace(0, 2)
         ssr_curve = [
-            self._compute_ssr_and_gradient(self.slope, b)[0]
+            self._compute_ssr_and_gradients(self.slope, b)[0]
             for b in intercept_range
         ]
 
